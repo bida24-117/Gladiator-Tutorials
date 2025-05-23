@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharpen Your Future - Join Gladiator Tutorials NOW</title>
+    <title>Do you sharpen your future, join Gladiator Tutorials <B>NOW</B></title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -11,144 +11,79 @@
 </head>
 
 <body>
-    <header class="container mt-3">
-        <h1 class="text-center">Welcome to Gladiator Tutorials!</h1>
-        <nav class="nav justify-content-center">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="joinus.html">Join us</a>
-            <a class="nav-link" href="contact.html">Contact</a>
+    <header>
+        <h1>Welcome to Gladiator Tutorials!</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>
+            <a href="joinus.html">Join us</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main class="container my-5">
-        <form action="#" name="myForm" onSubmit="return validate()">
-            <h3 class="text-center mb-4">STUDENT REGISTRATION FORM</h3>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <!-- Personal Information -->
-                    <div class="row g-3">
-                        <!-- Add all your existing form fields here (First Name, Last Name, etc) -->
+    <form action="#" name="myForm" onSubmit="return (validate())">
+        <h3 align="center"> STUDENT REGISTRATION FORM </h3>
+        <table align="center" cellpadding="9">
 
-                        <!-- Subjects Section (Updated) -->
-                        <div class="col-12">
-                            <label class="form-label">Select Subjects:</label>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Biology">
-                                        <label class="form-check-label">Biology</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Chemistry">
-                                        <label class="form-check-label">Chemistry</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Physics">
-                                        <label class="form-check-label">Physics</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Mathematics">
-                                        <label class="form-check-label">Mathematics</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Accounting">
-                                        <label class="form-check-label">Accounting</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Agriculture">
-                                        <label class="form-check-label">Agriculture</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="English">
-                                        <label class="form-check-label">English</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Geography">
-                                        <label class="form-check-label">Geography</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Social Studies">
-                                        <label class="form-check-label">Social Studies</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Level Selection -->
-                        <div class="col-12">
-                            <label class="form-label">Select Level:</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="level" value="PSLE">
-                                <label class="form-check-label">PSLE</label>
-                            </div>
-				 <div class="form-check">
-                                <input class="form-check-input" type="radio" name="level" value="JCE">
-                                <label class="form-check-label">JCE</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="level" value="BGCSE">
-                                <label class="form-check-label">BGCSE</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="level" value="IGCSE">
-                                <label class="form-check-label">IGCSE</label>
-                            </div>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
+            <tr>
+                <td> Select Subjects: </td>
+                <td>
+                    <div style="column-count: 2; column-gap: 20px;">
+                        Biology<input type="checkbox" name="subjects" value="Biology">
+                        Chemistry<input type="checkbox" name="subjects" value="Chemistry">
+                        Physics<input type="checkbox" name="subjects" value="Physics">
+                        Integrated Science<input type="checkbox" name="subjects" value="Integrated Science">
+                        Mathematics<input type="checkbox" name="subjects" value="Mathematics">
+                        Accounting<input type="checkbox" name="subjects" value="Accounting">
+                        Agriculture<input type="checkbox" name="subjects" value="Agriculture">
+                        Setswana<input type="checkbox" name="subjects" value="Setswana">
+                        English<input type="checkbox" name="subjects" value="English">
+                        Geography<input type="checkbox" name="subjects" value="Geography">
+                        Religious Education<input type="checkbox" name="subjects" value="Religious Education">
+                        Social Studies<input type="checkbox" name="subjects" value="Social Studies">
                     </div>
-                </div>
-            </div>
-        </form>
-    </main>
+                </td>
+            </tr>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+        </table>
+    </form>
+
+    <footer>
         <p>&copy; 2025 Gladiator Tutorials</p>
     </footer>
 
-    <!-- Validation Script (Updated) -->
-    <script>
-    function validate() {
-        // Existing validation checks
+    <script type="text/javascript">
+        function validate(){
+            // Existing validation checks
 
-        // Check at least one subject is selected
-        const subjects = document.getElementsByName('subjects[]');
-        let subjectChecked = false;
-        
-        for(let i = 0; i < subjects.length; i++) {
-            if(subjects[i].checked) {
-                subjectChecked = true;
-                break;
+            // Add subject selection validation
+            const subjects = document.getElementsByName('subjects');
+            let subjectSelected = false;
+            
+            for(let i = 0; i < subjects.length; i++) {
+                if(subjects[i].checked) {
+                    subjectSelected = true;
+                    break;
+                }
             }
-        }
-        
-        if(!subjectChecked) {
-            alert("Please select at least one subject!");
-            return false;
-        }
+            
+            if(!subjectSelected) {
+                alert("Please select at least one subject!");
+                return false;
+            }
 
-        // Check level selection
-        const level = document.querySelector('input[name="level"]:checked');
-        if(!level) {
-            alert("Please select your education level!");
-            return false;
-        }
+            if(document.myForm.First_Name.value==""){
+                alert("Please provide First Name !");
+                document.myForm.First_Name.focus();
+                return false;
+            }
 
-        return true;
-    }
+            return true;
+        }
     </script>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>  
 </body>
 </html>
