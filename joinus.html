@@ -1,89 +1,253 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do you sharpen your future, join Gladiator Tutorials <B>NOW</B></title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Do you sharpen your future, join Gladiator Tutorials <B>NOW</B></title>
+
+<!-- Bootstrap CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+	
+<link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Gladiator Tutorials!</h1>
-        <nav>
-            <a href="index.html">Home</a> 
-            <a href="about.html">About</a>
-            <a href="joinus.html">Join us</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <form action="#" name="myForm" onSubmit="return (validate())">
-        <h3 align="center"> STUDENT REGISTRATION FORM </h3>
-        <table align="center" cellpadding="9">
+<header>
 
-            <tr>
-                <td> Select Subjects: </td>
-                <td>
-                    <div style="column-count: 2; column-gap: 20px;">
-                        Biology<input type="checkbox" name="subjects" value="Biology">
-                        Chemistry<input type="checkbox" name="subjects" value="Chemistry">
-                        Physics<input type="checkbox" name="subjects" value="Physics">
-                        Integrated Science<input type="checkbox" name="subjects" value="Integrated Science">
-                        Mathematics<input type="checkbox" name="subjects" value="Mathematics">
-                        Accounting<input type="checkbox" name="subjects" value="Accounting">
-                        Agriculture<input type="checkbox" name="subjects" value="Agriculture">
-                        Setswana<input type="checkbox" name="subjects" value="Setswana">
-                        English<input type="checkbox" name="subjects" value="English">
-                        Geography<input type="checkbox" name="subjects" value="Geography">
-                        Religious Education<input type="checkbox" name="subjects" value="Religious Education">
-                        Social Studies<input type="checkbox" name="subjects" value="Social Studies">
-                    </div>
-                </td>
-            </tr>
+<h1>Welcome to Gladiator Tutorials!</h1>
+<nav>
+    <a href="index.html">Home</a> 
+    <a href="about.html">About</a>
+   <a href="joinus.html">Join us</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-        </table>
-    </form>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Gladiator Tutorials</p>
-    </footer>
+<form action = "#" name = "myForm" onSubmit = "return (validate())";>
 
-    <script type="text/javascript">
-        function validate(){
-            // Existing validation checks
+<h3 align = "center"> STUDENT REGISTRATION FORM </h3>
 
-            // Add subject selection validation
-            const subjects = document.getElementsByName('subjects');
-            let subjectSelected = false;
-            
-            for(let i = 0; i < subjects.length; i++) {
-                if(subjects[i].checked) {
-                    subjectSelected = true;
-                    break;
-                }
-            }
-            
-            if(!subjectSelected) {
-                alert("Please select at least one subject!");
-                return false;
-            }
+<table align = "center" cellpadding="9">
 
-            if(document.myForm.First_Name.value==""){
-                alert("Please provide First Name !");
-                document.myForm.First_Name.focus();
-                return false;
-            }
+<tr>
+<td> First Name : </td>
+<td>
+<input type = "text" name = "First_Name" placeholder="First Name" />
+</td>
+</tr>
 
-            return true;
-        }
-    </script>
+<tr>
+<td> Last Name : </td>
+<td>
+	<input type = "text" name ="Last_Name" placeholder="Last Name" />
+</td>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>  
+</tr>
+
+<tr>
+	<td> Gender : </td>
+	<td> Male
+		<input type="radio" name="Gender" value="male" /> 
+	Female
+ 
+ <input type="radio" name="Gender" value="female" />
+	</td>
+</tr>
+
+
+<tr>
+	<td> Moblie No. </td>
+<td>
+      <input type="text" name="Mobile" placeholder="Moblie Number" />
+</td>
+</tr>
+
+<tr>
+	<td> Email : </td>
+	<td> <input type="text" name="Email" placeholder="Email Id" />
+	</td>
+</tr>
+
+
+<tr>
+	<td> Password : </td>
+	<td><input type="Password" name="Password" placeholder="Password" />
+	</td>
+</tr>
+
+
+<tr>
+	<td> Address : </td>
+
+<td>
+	<textarea name = "Address" rows="5" cols="20" placeholder="Address" />
+		
+	</textarea>
+</td>
+
+</tr>
+
+<tr>
+	<td> City :</td>
+
+<td>
+	<input type="text" name="city" placeholder="City" />
+</td>
+
+</tr>
+
+
+<tr>
+	<td> State : </td>
+<td>
+	<input type="text" name="state" placeholder="State" />
+</td>
+
+</tr>
+
+
+<tr>
+	<td> Country : </td>
+	<td>
+		<input type="text" name="Country" value="BOTSWANA" readonly="readonly" />
+	</td>
+</tr>
+
+
+<tr>
+<td> Select Subjects :</td> <br>
+<td>
+Biology<input type="checkbox" name="Course" value="Biology" />
+
+Chemistry<input type="checkbox" name="Course" value="Chemistry" />
+
+Physics<input type="checkbox" name="Course" value="Physics" />
+
+Integrated Science<input type="checkbox" name="Course" value="Integrated Science" />
+	
+  Mathematics<input type="checkbox" name="Course" value="Mathematics" />
+
+  Accounting<input type="checkbox" name="Course" value="Accounting" />
+
+  Agriculture<input type="checkbox" name="Course" value="Agriculture" />
+
+  Setswana<input type="checkbox" name="Course" value="Setswana" />
+
+  English<input type="checkbox" name="Course" value="English" />
+
+ Geography<input type="checkbox" name="Course" value="Geography" />
+	
+ Religious Educationtype<input type=""checkbox name="Course" value="Religious Education" />
+
+ Social Studies<input type="checkbox" name="Course" value="Social Studies" />	
+</td>
+</tr>
+
+<tr>
+	<td align="right"> </td>
+	<td>
+<input type="Submit"  Value = "Submit"  />
+</td>
+</tr>
+
+<tr>
+<td>Select level :</td> <br>
+<td>
+PSLE<input type="checkbox" name="Course" value="PSLE" />
+JCE<input type="checkbox" name="Course" value="JCE" />
+BGCSE<input type="checkbox" name="Course" value="BGCSE" />
+IGCSE<input type="checkbox" name="Course" value="IGCSE" />	
+</td>	
+</tr>
+</table>
+
+</form>
+
+
+
+
+  
+<footer>
+
+<p>&copy; 2025 Gladiator Tutorials</p>
+
+</footer>
+
+
+  <script type="text/javascript">
+	
+	function validate(){
+
+		if(document.myForm.First_Name.value==""){
+
+			alert("Please provide First Name !");
+			document.myForm.First_Name.focus();
+			return false;
+		}
+
+		if(document.myForm.Last_Name.value==""){
+
+			alert("Please provide Last Name !");
+			document.myForm.Last_Name.focus();
+			return false;
+		}
+
+		if(document.myForm.Mobile.value==""){
+
+			alert("Please provide mobile number !!");
+			document.myForm.Mobile.focus();
+			return false;
+		}
+
+		if(document.myForm.Email.value==""){
+
+			alert("Please provide valid Email !!");
+			document.myForm.Email.focus();
+			return false;
+		}
+
+		if(document.myForm.Password.value==""){
+
+			alert("Please Enter Password !!");
+			document.myForm.Password.focus();
+			return false;
+		}
+
+		if(document.myForm.city.value==""){
+
+			alert("Please provide city");
+			document.myForm.city.focus();
+			return false;
+		}
+
+		
+	
+
+		return(true);
+
+			}
+
+
+</script>
+
+
+<!-- Bootstrap JS and dependencies -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>	
+  
 </body>
-</html>
+
+</html>                                                                                                                                                                              Fix this so that i am able to select more than one subject                                                                                               do not exclude 
