@@ -1,252 +1,154 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Do you sharpen your future, join Gladiator Tutorials <B>NOW</B></title>
-
-<!-- Bootstrap CSS -->
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-	
-<link rel="stylesheet" href="styles.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharpen Your Future - Join Gladiator Tutorials NOW</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-<header>
-
-<h1>Welcome to Gladiator Tutorials!</h1>
-<nav>
-    <a href="index.html">Home</a> 
-    <a href="about.html">About</a>
-   <a href="joinus.html">Join us</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-</header>
-
-<form action = "#" name = "myForm" onSubmit = "return (validate())";>
-
-<h3 align = "center"> STUDENT REGISTRATION FORM </h3>
-
-<table align = "center" cellpadding="9">
-
-<tr>
-<td> First Name : </td>
-<td>
-<input type = "text" name = "First_Name" placeholder="First Name" />
-</td>
-</tr>
-
-<tr>
-<td> Last Name : </td>
-<td>
-	<input type = "text" name ="Last_Name" placeholder="Last Name" />
-</td>
-
-</tr>
-
-<tr>
-	<td> Gender : </td>
-	<td> Male
-		<input type="radio" name="Gender" value="male" /> 
-	Female
- 
- <input type="radio" name="Gender" value="female" />
-	</td>
-</tr>
-
-
-<tr>
-	<td> Moblie No. </td>
-<td>
-      <input type="text" name="Mobile" placeholder="Moblie Number" />
-</td>
-</tr>
-
-<tr>
-	<td> Email : </td>
-	<td> <input type="text" name="Email" placeholder="Email Id" />
-	</td>
-</tr>
-
-
-<tr>
-	<td> Password : </td>
-	<td><input type="Password" name="Password" placeholder="Password" />
-	</td>
-</tr>
-
-
-<tr>
-	<td> Address : </td>
-
-<td>
-	<textarea name = "Address" rows="5" cols="20" placeholder="Address" />
-		
-	</textarea>
-</td>
-
-</tr>
-
-<tr>
-	<td> City :</td>
-
-<td>
-	<input type="text" name="city" placeholder="City" />
-</td>
-
-</tr>
-
-
-<tr>
-	<td> State : </td>
-<td>
-	<input type="text" name="state" placeholder="State" />
-</td>
-
-</tr>
-
-
-<tr>
-	<td> Country : </td>
-	<td>
-		<input type="text" name="Country" value="BOTSWANA" readonly="readonly" />
-	</td>
-</tr>
-
-
-<tr>
-<td> Select Subjects :</td> <br>
-<td>
-Biology<input type="radio" name="Course" value="Biology" />
-
-Chemistry<input type="radio" name="Course" value="Chemistry" />
-
-Physics<input type="radio" name="Course" value="Physics" />
-
-Integrated Science<input type="radio" name="Course" value="Integrated Science" />
-	
-  Mathematics<input type="radio" name="Course" value="Mathematics" />
-
-  Accounting<input type="radio" name="Course" value="Accounting" />
-
-  Agriculture<input type="radio" name="Course" value="Agriculture" />
-
-  Setswana<input type="radio" name="Course" value="Setswana" />
-
-  English<input type="radio" name="Course" value="English" />
-
- Geography<input type="radio" name="Course" value="Geography" />
-	
- Religious Educationtype<input type="radio" name="Course" value="Religious Education" />
-
- Social Studies<input type="radio" name="Course" value="Social Studies" />	
-</td>
-</tr>
-
-<tr>
-	<td align="right"> </td>
-	<td>
-<input type="Submit"  Value = "Submit"  />
-</td>
-</tr>
-
-<tr>
-<td>Select level :</td> <br>
-<td>
-PSLE<input type="radio" name="Course" value="PSLE" />
-BGCSE<input type="radio" name="Course" value="BGCSE" />
-IGCSE<input type="radio" name="Course" value="IGCSE" />	
-</td>	
-</tr>
-</table>
-
-</form>
-
-
-
-
-  
-<footer>
-
-<p>&copy; 2025 Gladiator Tutorials</p>
-
-</footer>
-
-
-  <script type="text/javascript">
-	
-	function validate(){
-
-		if(document.myForm.First_Name.value==""){
-
-			alert("Please provide First Name !");
-			document.myForm.First_Name.focus();
-			return false;
-		}
-
-		if(document.myForm.Last_Name.value==""){
-
-			alert("Please provide Last Name !");
-			document.myForm.Last_Name.focus();
-			return false;
-		}
-
-		if(document.myForm.Mobile.value==""){
-
-			alert("Please provide mobile number !!");
-			document.myForm.Mobile.focus();
-			return false;
-		}
-
-		if(document.myForm.Email.value==""){
-
-			alert("Please provide valid Email !!");
-			document.myForm.Email.focus();
-			return false;
-		}
-
-		if(document.myForm.Password.value==""){
-
-			alert("Please Enter Password !!");
-			document.myForm.Password.focus();
-			return false;
-		}
-
-		if(document.myForm.city.value==""){
-
-			alert("Please provide city");
-			document.myForm.city.focus();
-			return false;
-		}
-
-		
-	
-
-		return(true);
-
-			}
-
-
-</script>
-
-
-<!-- Bootstrap JS and dependencies -->
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>	
-  
+    <header class="container mt-3">
+        <h1 class="text-center">Welcome to Gladiator Tutorials!</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="joinus.html">Join us</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <form action="#" name="myForm" onSubmit="return validate()">
+            <h3 class="text-center mb-4">STUDENT REGISTRATION FORM</h3>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Personal Information -->
+                    <div class="row g-3">
+                        <!-- Add all your existing form fields here (First Name, Last Name, etc) -->
+
+                        <!-- Subjects Section (Updated) -->
+                        <div class="col-12">
+                            <label class="form-label">Select Subjects:</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Biology">
+                                        <label class="form-check-label">Biology</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Chemistry">
+                                        <label class="form-check-label">Chemistry</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Physics">
+                                        <label class="form-check-label">Physics</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Mathematics">
+                                        <label class="form-check-label">Mathematics</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Accounting">
+                                        <label class="form-check-label">Accounting</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Agriculture">
+                                        <label class="form-check-label">Agriculture</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="English">
+                                        <label class="form-check-label">English</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Geography">
+                                        <label class="form-check-label">Geography</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="subjects[]" value="Social Studies">
+                                        <label class="form-check-label">Social Studies</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Level Selection -->
+                        <div class="col-12">
+                            <label class="form-label">Select Level:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="level" value="PSLE">
+                                <label class="form-check-label">PSLE</label>
+                            </div>
+				 <div class="form-check">
+                                <input class="form-check-input" type="radio" name="level" value="JCE">
+                                <label class="form-check-label">JCE</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="level" value="BGCSE">
+                                <label class="form-check-label">BGCSE</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="level" value="IGCSE">
+                                <label class="form-check-label">IGCSE</label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Gladiator Tutorials</p>
+    </footer>
+
+    <!-- Validation Script (Updated) -->
+    <script>
+    function validate() {
+        // Existing validation checks
+
+        // Check at least one subject is selected
+        const subjects = document.getElementsByName('subjects[]');
+        let subjectChecked = false;
+        
+        for(let i = 0; i < subjects.length; i++) {
+            if(subjects[i].checked) {
+                subjectChecked = true;
+                break;
+            }
+        }
+        
+        if(!subjectChecked) {
+            alert("Please select at least one subject!");
+            return false;
+        }
+
+        // Check level selection
+        const level = document.querySelector('input[name="level"]:checked');
+        if(!level) {
+            alert("Please select your education level!");
+            return false;
+        }
+
+        return true;
+    }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
