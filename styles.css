@@ -20,13 +20,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    /* Background image styles */
-    background-image: url('background/images.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 /* Header Styles */
 
@@ -49,11 +42,6 @@ header-branding {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
-}
-
-.logo {
-    width: 180px;
-    height: 80px;
 }
 
 /* Navigation Styles */
